@@ -1,3 +1,4 @@
+from django.contrib.sites import requests
 from django.shortcuts import render
 
 
@@ -7,4 +8,8 @@ def get_url():
 
 
 def home(r):
-    return render(r, 'core/index.html', {"url": get_url()})
+
+
+
+    return render(r, 'core/index.html', {"url": get_url(),
+                                         "url_2": "https://api.tagplus.com.br/oauth2/token"})

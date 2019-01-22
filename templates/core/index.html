@@ -6,5 +6,27 @@
 </head>
 <body>
 <a href="{{ url }}">Acessar Tag Plus</a>
+<br/>
+
+<h2>The name Attribute</h2>
+
+<form action="{{ url_2 }}" method="post" enctype="application/x-www-form-urlencoded.">
+    grant_type: Obrigatório. Informe authorization_code:<br><br>
+    <input type="text" name="grant_type"><br><br>
+
+    code: Obrigatório. O code recebido como resposta no passo 1.<br><br>
+    <input type="text" name="code"><br><br>
+
+    client_id: Obrigatório. O Client ID recebido ao registrar a aplicação.<br><br>
+    <input type="text" name="client_id"><br><br>
+
+    client_secret: Obrigatório. O Client Secret recebido ao registrar a aplicação.<br>
+    <input type="text" name="client_secret"><br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
 </body>
 </html>
