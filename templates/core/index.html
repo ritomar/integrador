@@ -8,11 +8,14 @@
 <a href="{{ url }}">Acessar Tag Plus</a>
 <br/>
 
+<a href="{{ url }}">Acessar Tag Plus</a>
+<br/>
+
 <h2>The name Attribute</h2>
 
 <form action="{{ url_2 }}" method="post" enctype="application/x-www-form-urlencoded.">
     grant_type: Obrigatório. Informe authorization_code:<br><br>
-    <input type="text" name="grant_type"><br><br>
+    <input type="text" name="grant_type" value="authorization_code"><br><br>
 
     code: Obrigatório. O code recebido como resposta no passo 1.<br><br>
     <input type="text" name="code"><br><br>
