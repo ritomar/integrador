@@ -41,8 +41,8 @@ def go_oauth2(r):
         'https://developers.tagplus.com.br/authorize',
     )
 
-    print('Please go to %s and authorize access.' % authorization_url)
-    authorization_response = input('Enter the full callback URL: ')
+    # print('Please go to %s and authorize access.' % authorization_url)
+    # authorization_response = input('Enter the full callback URL: ')
 
     # token = oauth.fetch_token(
     #     'https://accounts.google.com/o/oauth2/token',
