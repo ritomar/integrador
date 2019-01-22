@@ -13,12 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import oauth2_provider
+from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from core import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('o', views.go_oauth2, name='go_oauth2'),
     path('admin/', admin.site.urls),
+    path('oauth2/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]
